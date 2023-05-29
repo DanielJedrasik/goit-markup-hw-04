@@ -10,6 +10,9 @@
   --body-text-color: #212121;
   --stroke-color: #ececec;
   --portfolio-border-color: #eeeeee;
+  --header-background-img: url(/images/headerbackground.jpg);
+  --icon-socialmedia-color: #afb1b8;
+  --footer-background: rgba(255, 255, 255, 0.1);
 }
 body {
   background: var(--main-white-color);
@@ -70,6 +73,8 @@ a {
 .filter-buttons button:focus {
   background-color: var(--blue-color);
   color: var(--main-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .header-navigation a,
 .footer-styles a {
@@ -107,7 +112,7 @@ a {
 .header-contacts {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .website-navigation a {
@@ -128,8 +133,19 @@ a {
   margin: 0 auto;
 }
 .main-block {
+  max-width: 1600px;
   background-color: var(--secondary-background-color);
   padding: 200px 0;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/headerbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .order-button {
   font-family: "Roboto";
@@ -155,6 +171,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 .informations-paragraph {
   font-size: 14px;
@@ -300,4 +317,126 @@ a {
 }
 .footer-contacts li:not(:last-child) {
   margin-bottom: 9px;
+}
+.icon-size {
+  width: 70px;
+  height: 70px;
+}
+.informations-svg {
+  background-color: var(--team-section-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 270px;
+  height: 120px;
+}
+.team-svg-size {
+  width: 22px;
+  height: 22px;
+}
+.team-socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 206px;
+  height: 56px;
+  margin: 0 auto;
+}
+.phone-icon {
+  width: 10px;
+  height: 16px;
+  fill: var(--gray-text-color);
+}
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--gray-text-color);
+}
+.mail-icon,
+.phone-icon {
+  margin-right: 10px;
+  justify-content: center;
+}
+.portfolio-images-position li:hover,
+.portfolio-images-position li:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+.our-team svg {
+  fill: var(--icon-socialmedia-color);
+  background: none;
+  box-shadow: none;
+}
+.our-clients li {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+.our-clients ul {
+  display: flex;
+  gap: 30px;
+}
+.our-clients svg {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-socialmedia-color);
+}
+.our-clients li {
+  padding: 16px 32px;
+  border: 1px solid;
+}
+.our-clients li:hover,
+.our-clients a:hover {
+  color: var(--blue-color);
+}
+.our-clients svg:hover {
+  fill: currentColor;
+}
+
+.our-clients {
+  padding-top: 103px;
+  padding-bottom: 94px;
+}
+.footer-svg svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-white-color);
+}
+.footer-svg-list {
+  padding-top: 20px;
+  gap: 10px;
+}
+.footer-svg-list li {
+  width: 44px;
+  height: 44px;
+  background: var(--footer-background);
+  padding: 12px;
+  border-radius: 50%;
+}
+.footer-position {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+.footer-svg ul {
+  display: flex;
+}
+.footer-svg {
+  margin-left: 70px;
+}
+.footer-svg li:hover {
+  background: var(--blue-color);
+  cursor: pointer;
+  caret-color: orange;
+}
+.join-us {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
 }
