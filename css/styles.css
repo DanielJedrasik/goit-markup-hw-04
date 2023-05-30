@@ -390,6 +390,7 @@ a {
 .our-clients ul {
   display: flex;
   gap: 30px;
+  color: var(--icon-socialmedia-color);
 }
 .our-clients {
   padding-top: 103px;
@@ -403,7 +404,6 @@ a {
 }
 .our-clients li {
   border: 1px solid;
-  color: var(--icon-socialmedia-color);
   border-radius: 4px;
   padding: 16px 32px;
   border: 1px solid;
