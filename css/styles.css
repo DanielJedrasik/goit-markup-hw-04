@@ -10,7 +10,6 @@
   --body-text-color: #212121;
   --stroke-color: #ececec;
   --portfolio-border-color: #eeeeee;
-  --header-background-img: url(/images/headerbackground.jpg);
   --icon-socialmedia-color: #afb1b8;
   --footer-background: rgba(255, 255, 255, 0.1);
 }
@@ -140,7 +139,7 @@ a {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/headerbackground.jpg);
+    url(./images/headerbackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
