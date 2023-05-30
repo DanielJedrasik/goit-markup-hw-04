@@ -77,25 +77,39 @@ a {
 }
 .header-navigation a,
 .footer-styles a {
-  text-decoration: none;
+  fill: var(--gray-text-color);
 }
 .header-navigation a:hover,
 .header-navigation a:focus,
 .footer-styles a:hover,
 .footer-styles a:focus {
   color: var(--blue-color);
+  fill: currentColor;
+}
+.header-navigation {
+  border-bottom: 1px solid var(--stroke-color);
+}
+.header-position,
+.website-navigation ul,
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+.website-navigation ul {
+  gap: 46px;
+}
+.header-contacts {
+  gap: 50px;
+  margin-left: auto;
+}
+.website-navigation {
+  margin-left: 93px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .web {
   color: var(--blue-color);
 }
-.footer-webstudio {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: var(--main-white-color);
-}
+
 .webstudio {
   font-family: "Raleway";
   font-weight: 700;
@@ -205,6 +219,44 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.our-team svg {
+  box-shadow: none;
+}
+.our-team ul {
+  display: flex;
+  gap: 30px;
+}
+.our-team-text-position {
+  padding-block: 30px;
+}
+.team-socialmedia li {
+  box-shadow: none;
+}
+.team-socialmedia a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--main-white-color);
+  fill: var(--icon-socialmedia-color);
+}
+.our-team ul.team-socialmedia {
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.team-socialmedia a:hover {
+  background-color: var(--blue-color);
+  fill: currentColor;
+}
+
+.team-svg-size {
+  width: 22px;
+  height: 22px;
+}
 .team-paragraph {
   font-size: 16px;
   line-height: 1.19;
@@ -215,6 +267,14 @@ a {
 .footer-styles {
   background-color: var(--secondary-background-color);
   padding-block: 60px;
+}
+.footer-webstudio {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--main-white-color);
 }
 .footer-contacts {
   font-size: 14px;
@@ -255,26 +315,7 @@ a {
   color: var(--gray-text-color);
   margin-top: 4px;
 }
-.header-navigation {
-  border-bottom: 1px solid var(--stroke-color);
-}
-.header-position,
-.website-navigation ul,
-.header-contacts {
-  display: flex;
-  align-items: center;
-}
-.website-navigation ul {
-  gap: 46px;
-}
-.header-contacts {
-  gap: 50px;
-  margin-left: auto;
-}
-.website-navigation {
-  margin-left: 93px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+
 .informations ul {
   display: flex;
   gap: 30px;
@@ -286,10 +327,7 @@ a {
   display: flex;
   gap: 30px;
 }
-.our-team ul {
-  display: flex;
-  gap: 30px;
-}
+
 .filter-buttons {
   display: flex;
   justify-content: center;
@@ -311,9 +349,7 @@ a {
   border: 1px solid var(--portfolio-border-color);
   border-top: none;
 }
-.our-team-text-position {
-  padding-block: 30px;
-}
+
 .footer-contacts li:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -329,47 +365,20 @@ a {
   max-width: 270px;
   height: 120px;
 }
-.team-svg-size {
-  width: 22px;
-  height: 22px;
-}
-.team-socialmedia li {
-  box-shadow: none;
-}
-.team-socialmedia a {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-.team-socialmedia a:hover,
-.team-socialmedia svg:hover {
-  background-color: var(--blue-color);
-  fill: var(--main-white-color);
-}
 
-.our-team ul.team-socialmedia {
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 30px;
-}
 .phone-icon {
   width: 10px;
   height: 16px;
-  fill: var(--gray-text-color);
+  color: var(--blue-color);
 }
 .mail-icon {
   width: 16px;
   height: 12px;
-  fill: var(--gray-text-color);
+  color: var(--blue-color);
 }
 .mail-icon,
 .phone-icon {
   margin-right: 10px;
-  justify-content: center;
 }
 .portfolio-images-position li:hover,
 .portfolio-images-position li:focus {
@@ -377,11 +386,7 @@ a {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
-.our-team svg {
-  fill: var(--icon-socialmedia-color);
-  background: none;
-  box-shadow: none;
-}
+
 .our-clients li {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -393,6 +398,7 @@ a {
   gap: 30px;
 }
 .our-clients svg {
+  color: var(--blue-color);
   width: 106px;
   height: 60px;
   fill: var(--icon-socialmedia-color);
@@ -402,10 +408,10 @@ a {
   border: 1px solid;
 }
 .our-clients li:hover,
-.our-clients a:hover {
+.our-clients li:focus,
+.our-clients svg:hover,
+.our-clients svg:focus {
   color: var(--blue-color);
-}
-.our-clients svg:hover {
   fill: currentColor;
 }
 
