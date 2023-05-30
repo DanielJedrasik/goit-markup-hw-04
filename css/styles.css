@@ -334,14 +334,28 @@ a {
   width: 22px;
   height: 22px;
 }
-.team-socialmedia {
+.team-socialmedia li {
+  box-shadow: none;
+}
+.team-socialmedia a {
+  width: 44px;
+  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+}
+.team-socialmedia a:hover,
+.team-socialmedia svg:hover {
+  background-color: var(--blue-color);
+  fill: var(--main-white-color);
+}
+
+.our-team ul.team-socialmedia {
   gap: 10px;
-  width: 206px;
-  height: 56px;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
 }
 .phone-icon {
   width: 10px;
@@ -430,7 +444,6 @@ a {
 .footer-svg li:hover {
   background: var(--blue-color);
   cursor: pointer;
-  caret-color: orange;
 }
 .join-us {
   font-weight: 700;
