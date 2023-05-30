@@ -148,13 +148,13 @@ a {
 .main-block {
   max-width: 1600px;
   height: 600px;
-  background-color: var(--secondary-background-color);
   padding: 200px 0;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/headerbackground.jpg);
+  background-color: var(--secondary-background-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -249,11 +249,11 @@ a {
   align-items: center;
   padding-bottom: 30px;
 }
-.team-socialmedia a:hover {
+.team-socialmedia a:hover,
+.team-socialmedia a:focus {
   background-color: var(--blue-color);
   fill: currentColor;
 }
-
 .team-svg-size {
   width: 22px;
   height: 22px;
@@ -387,24 +387,24 @@ a {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
-
-.our-clients li {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-}
 .our-clients ul {
   display: flex;
   gap: 30px;
 }
+.our-clients {
+  padding-top: 103px;
+  padding-bottom: 94px;
+}
 .our-clients svg {
-  color: var(--blue-color);
   width: 106px;
   height: 60px;
+  color: var(--blue-color);
   fill: var(--icon-socialmedia-color);
 }
 .our-clients li {
+  border: 1px solid;
+  color: var(--icon-socialmedia-color);
+  border-radius: 4px;
   padding: 16px 32px;
   border: 1px solid;
 }
@@ -414,11 +414,6 @@ a {
 .our-clients svg:focus {
   color: var(--blue-color);
   fill: currentColor;
-}
-
-.our-clients {
-  padding-top: 103px;
-  padding-bottom: 94px;
 }
 .footer-svg svg {
   width: 20px;
